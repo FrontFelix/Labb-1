@@ -1,3 +1,4 @@
+// Global Variabels
 const pages = {
     "starter": document.getElementById('start'),
     "settings": document.getElementById('settings'),
@@ -11,23 +12,24 @@ const player =
     "weapon": "pistol",
     "age": 13
 }
+
 const fighterImage = document.getElementById('fighter')
-const arenaImage = document.getElementById('fighterArena')
-const arenaName = document.getElementById('arenaName')
-const arenaAge = document.getElementById('arenaAge')
-const arenaWeapon = document.getElementById('arenaWeapon')
+// Global Variabels
 
 
 // Arena 
 const wolf = document.getElementById('wolf')
 const person = document.getElementById('fighterArena')
+const arenaImage = document.getElementById('fighterArena')
+const arenaName = document.getElementById('arenaName')
+const arenaAge = document.getElementById('arenaAge')
+const arenaWeapon = document.getElementById('arenaWeapon')
 
 // Arena buttons
 const attackBtn = document.getElementById('buttonAttack')
 const friendBtn = document.getElementById('buttonFriend')
 
-// Weapons
-
+// Arena Weapons
 const bullet = document.getElementById('bullet')
 const swing = document.getElementById('swing')
 const scratch = document.getElementById('scratch')
