@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #151515;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+div {
+    width: 100%;
+    max-height: 100vh;
+}
+
+img{
+    transition: 0.2s;
+}
+img:hover {
+    transform: scale(1.1);
+}
+
+#fighter {
+    width: 200px;
+}
+.info {
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.37);
+    height: 200px;
+}
+
+
+#fightingScene {
+position: relative;
+}
+
+#fightingScene img {
+    width: 200px;
+}
+
+.arena {
+    position: relative;
+}
+.arena button {
+    width: 300px;
+    background-color: thistle;
+    height: 80px;
+    left: 800px;
+    position: absolute;
+}
+
+#buttonFriend {
+    top: 100px;
+}
+
+#swing {
+    position: absolute;
+    right: 490px;
+}
+#bullet {
+    display: none;
+    position: absolute;
+    left: 800px;
+}
+
+#scratch {
+    position: absolute;
+    left: 490px;
+}
+
+
+@keyframes bulletShoot {
+    from {
+        display: none;
+        left: 700px;
+    }
+    to {
+        display: block;
+        left: 1100px;
+    }
+}
+
+@keyframes rotateWolf {
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotateSwing {
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes rotateScratch {
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes rotatePerson {
+    100% {
+        transform: rotate(90deg);
+    }
+}

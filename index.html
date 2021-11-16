@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Labb-1</title>
+</head>
+<body>
+    <div id="start" class="starter">
+        <h1 class="text-center text-3xl text-white mt-52">Välj din <span class="font-black">FIGHTER</span></h1>
+        <div class="fighters flex justify-around px-80 mt-20">
+            <button id="Male" onclick="updateFighter(this)"><img class="w-1/2" src="./images/fighter1.png" alt=""></button>
+            <button id="Female" onclick="updateFighter(this)"><img src="./images/fighter2.png" alt=""></button>
+        </div>
+    </div>
+    <div id="settings" class="settings hidden">
+        <img class="mx-auto mt-40" id="fighter" src="" alt="">
+            <label class="text-white text-center mx-auto block text-xl" for="fighterName">Skriv in namnet på din fighter</label>
+            <input required class="mx-auto block rounded px-4 text-center mt-2" type="text" name="fighterName" id="fighterName" placeholder="David">
+            <label class="text-white text-center mx-auto block text-xl mt-6" for="fighterAge">Skriv in ålder på din fighter</label>
+            <input required class="mx-auto block rounded px-4 text-center mt-2" type="text" name="fighterAge" id="fighterAge" placeholder="32">
+            <button onclick="settingsFighter()" class="text-white mx-auto block mt-12 text-2xl">Starta din FIGHT</button>
+    </div>
+    <div id="fightingScene" class="hidden">
+        <div class="info rounded">
+            <h1 class="text-xl text-center py-2">Fighter Name</h1>
+            <h1 class="text-center" id="arenaName"></h1>
+            <h1 class="text-xl text-center py-2">Fighter Age</h1>
+            <h1 class="text-center" id="arenaAge"></h1>
+            <h1 class="text-xl text-center py-2">Fighter Weapon</h1>
+            <h1 class="text-center" id="arenaWeapon"></h1>
+        </div>
+        <h1 class="text-3xl text-white font-black text-center pt-28">LEEEEETS BEGIN THE FIGHT</h1>
+        <div class="arena flex justify-around px-80 mt-20">
+            <img class="" id="fighterArena" src="" alt="">
+            <button onclick="friendWolf()" id="buttonFriend" class="text-center text-xl font-bold">Försök bli vän med vargen</button>
+            <button onclick="fightWolf()" id="buttonAttack" class="text-center text-xl font-bold">Använd ditt vapen och försök att skada vargen</button>
+            <img class="hidden" id="swing" src="./images/swing.png" alt="">
+            <img class="hidden" id="scratch" src="./images/scratch.png" alt="">
+            <img class="" id="bullet" src="./images/bullet.png" alt="">
+            <img id="wolf" src="./images/mob.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
