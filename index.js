@@ -22,7 +22,7 @@ const arena = {
     "friendBtn": document.getElementById('buttonFriend'),
     "weaponBullet": document.getElementById('bullet'),
     "weaponSwing": document.getElementById('swing'),
-    "weaponScratch": document.getElementById('buttonFriend')
+    "weaponScratch": document.getElementById('scratch')
 }
 
 

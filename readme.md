@@ -1,4 +1,4 @@
-##FIGHTING GAME
+# FIGHTING GAME
 
 Du kan välja HERO, och sen slåss mot ett STORT MONSTER!!!!
 
