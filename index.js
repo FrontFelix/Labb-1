@@ -1,9 +1,16 @@
 const fighterImage = document.getElementById('fighter')
+
+/**
+ * Variabler för alla "divs"
+ */
 const pages = {
     "starter": document.getElementById('start'),
     "settings": document.getElementById('settings'),
     "fightscene": document.getElementById('fightingScene')
 }
+/**
+ * Spelarens val av karaktär, namn och ålder
+ */
 const player =
 {
     "name": "default",
@@ -11,6 +18,9 @@ const player =
     "weapon": "pistol",
     "age": 13
 }
+/**
+ * Alla arena variabler
+ */
 const arena = {
     "wolf": document.getElementById('wolf'),
     "person": document.getElementById('fighterArena'),
@@ -26,6 +36,11 @@ const arena = {
 }
 
 
+
+/** 
+ * Lägger till vapen beroende på vilken karaktär du har valt
+ * @param {*} item
+*/
 function updateFighter(item) {
     arena.attackBtn.style.display = "block"
     arena.friendBtn.style.display = "block"
@@ -44,6 +59,10 @@ function updateFighter(item) {
     fighterImage.src = player.fighter
 }
 
+
+/**
+ * Uppdaterar sidebaren med info från karaktärens val från updateFighter() funktionen
+ */
 function settingsFighter() {
     const ageValue = document.getElementById('fighterAge').value
     const nameValue = document.getElementById('fighterName').value
@@ -59,7 +78,9 @@ function settingsFighter() {
 
 }
 
-
+/**
+ * Slåss mot vargen, funktionen som används när du väljer att slåss mot vargen
+ */
 function fightWolf() {
     arena.attackBtn.style.display = "none"
     arena.friendBtn.style.display = "none"
@@ -83,6 +104,10 @@ function fightWolf() {
     }, 8000)
 }
 
+
+/**
+ * Funktionen som används för att försöka bli vän med vargen
+ */
 function friendWolf() {
     arena.attackBtn.style.display = "none"
     arena.friendBtn.style.display = "none"
